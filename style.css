@@ -1,0 +1,108 @@
+
+
+header {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 100%;
+    font-family: 'Arial', sens-serif;
+    font-size: 30px;
+
+}
+body {
+    height: 100%;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(90deg,#df0a58,#ff8801);    
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.slider-thumb::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 5%;
+    width: 1400px;
+    height: 1050px;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 10s linear infinite;
+}
+
+#work_in_progress_header{
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    font-size: 50px;
+    color: #ffffff;
+}
+#contact_header{
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    font-size: 30px;
+    color: #ffffff;
+
+}
+#contact_paragraph{
+    font-size: 16;
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    color: #ffffff;
+
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    color: #ffffff;
+}
+
+.glassmorphic-element {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background: #ffffff28; /* Semi-transparent white */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(10px); /* Blurred background */
+    padding: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
+
+    width: 400px;
+    height: 100px;
+
+}
+
+
+
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
+
